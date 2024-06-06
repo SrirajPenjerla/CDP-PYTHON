@@ -27,9 +27,18 @@ class BST:
         if root.right!=None:
             self.inorder(root.right)
     def postorder(self,root):
-        pass
+        print(root.data ,end= " ")
+        if root.left!=None:
+            self.postorder(root.left)
+        if root.right!=None:
+            self.postorder(root.right)
+
     def preorder(self,root):
-        pass
+        if root.left!=None:
+            self.preorder(root.left)
+        if root.right!=None:
+            self.preorder(root.right)
+        print(root.data, end= " ")
     def levelorder(self,root):
         q=[root]
         while q:
@@ -49,4 +58,9 @@ for i in range(1,len(values)):
     tree.addNode(root,values[i])
 tree.inorder(root)
 print()
+tree.postorder(root)
+print()
+tree.preorder(root)
+print()
 tree.levelorder(root)
+print()
