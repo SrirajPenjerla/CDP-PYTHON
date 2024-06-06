@@ -1,0 +1,20 @@
+'''
+create an atm system
+
+task1:
+display reamining amount in atm 
+ three  option of account 
+ 1 rupay
+ 2 visa
+ 3 master card 
+task2:
+authentication of user where username and pass should be same 
+if the user is authencated then give him the following options to choose :
+  1 check balance 
+  2 cash withdrawal (automatic balance display) 
+  based on card rupay only 2000 linit visa 5000 master card 8499 only more than this you have crossed tour transactin limit
+  3 cash deposit (automatic balance display)
+  4 mini stmt of the last 3 transactions 
+  provide an  
+'''
+
