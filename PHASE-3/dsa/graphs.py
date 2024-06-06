@@ -9,19 +9,19 @@ def BFS(start,graph):
                 visited.append(i)
     return visited
 
-def DFS(start,graph):
-    ans=[]
-    visited=[start]
-    stack=[start]
-    while stack:
-        ele=stack.pop()
-        ans.append(ele)
-        for i in graph[ele]:
-            if i not in visited:
-                stack.append(i)
-                visited.append(i)
+# def DFS(start,graph):
+#     ans=[]
+#     visited=[start]
+#     stack=[start]
+#     while stack:
+#         ele=stack.pop()
+#         ans.append(ele)
+#         for i in graph[ele]:
+#             if i not in visited:
+#                 stack.append(i)
+#                 visited.append(i)
 
-    return visited
+#     return visited
 def DFS(start,graph,visited=None):
     if not visited:
         visited=[]
