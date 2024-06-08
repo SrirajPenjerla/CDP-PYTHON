@@ -29,3 +29,5 @@ class Solution(object):
                 cache[index] = max(robCurrent,skipCurrent)
             return cache[0]
         return max_rob(nums)
+    
+a=10
